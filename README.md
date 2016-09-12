@@ -1,14 +1,11 @@
-# antd-demo
+# Nata-web
+Official website of Nata
 
 ## Environment
 
 ```
 node >= 4
 ```
-
-## Code Style
-
-https://github.com/airbnb/javascript
 
 ## Develop
 
