@@ -17,10 +17,24 @@ const props = [
     dataSource: {
       block1: {
         logo:'http://7pun7p.com1.z0.glb.clouddn.com/nata/light.png',
-        menu1:'NATA',
-        menu2:'NJU',
-        menu3:'GITHUB',
-        menu4:'ABOUT',
+        menu1:{
+          name: 'NATA',
+          key: 'nata'
+        },
+        menu2:{
+          name: '设计',
+          href: 'https://github.com/open-nata/nata-x/blob/master/sketches/nata.md',
+          key: 'design'
+        },
+        menu3:{
+          name:'GITHUB',
+          href: 'https://github.com/open-nata/nata',
+          key: 'github'
+        },
+        menu4:{
+          name: '关于',
+          key: 'about'
+        },
       },
     },
   },

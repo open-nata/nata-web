@@ -11,6 +11,14 @@ class Header extends React.Component {
     delete props.dataSource;
     delete props.name;
 
+    const navArr = [menu1,menu2,menu3,menu4];
+    const navToRender = navArr.map((item, i) => {
+      const _item = (<Item key={item.key} >
+        <a href={item.href} target="_blank" rel="noopener noreferrer">{item.name}</a>
+      </Item>);
+      return _item;
+    });
+
     return (<TweenOne
       component="header"
       animation={{ opacity: 0, type: 'from' }}
@@ -26,10 +34,7 @@ class Header extends React.Component {
       >
         <Menu mode="horizontal" defaultSelectedKeys={["a"]}
           style={{ lineHeight: `${parseFloat(this.props.style.height) - 2}px` }}>
-          <Item key="a">{menu1}</Item>
-          <Item key="b">{menu2}</Item>
-          <Item key="c">{menu3}</Item>
-          <Item key="d">{menu4} </Item>
+          {navToRender}
         </Menu>
       </TweenOne>
     </TweenOne>);
