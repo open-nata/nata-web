@@ -23,7 +23,7 @@ const props = [
         },
         menu2:{
           name: '设计',
-          href: 'https://github.com/open-nata/nata-x/blob/master/sketches/nata.md',
+          href: 'https://github.com/open-nata/nata-x/blob/master/docs/nata.md',
           key: 'design'
         },
         menu3:{
